@@ -1,6 +1,6 @@
     const url = 'https://raw.githubsercontent.com/myrellatristao/api/main/dados-globai'
 
-    async function vizualizarInformaçoesGlobais() {
+    async function vizualizarInformacoesGlobais() {
         const res = await fetch(url)
         const dados = await res.json()
         const pessoasconectadas = (dados.total_pessoas_mundo / 1e9)
