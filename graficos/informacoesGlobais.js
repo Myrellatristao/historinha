@@ -10,5 +10,11 @@
         const porcentagemConectada = ((pessoasConectadas / pessoasNoMundo ) * 100).toFixed
 
         const paragrafo = document.createElement('p')
-        )
-        )    }
+        paragrafo.classList.add('graficos-container__texto')
+        paragrafo.innerHTML = 'Voce sabia que o mundo tem <span>${pessoasNoMundo} bilhoes 
+    
+        const container = document.getElementById('graficos-container')
+        container.appendChild(paragrafo)
+    }
+
+    vizualizarInformacoesGlobais()
